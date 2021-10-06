@@ -3,7 +3,7 @@ var cors = require("cors");
 import { Request, Response } from "express";
 import "reflect-metadata";
 
-import { aaRouter } from "./routes/accountAggregator";
+const aaRouter = require("./routes/accountAggregator");
 const express = require("express");
 const app = express();
 const port = 3000;
